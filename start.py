@@ -9,14 +9,37 @@ def info(): #function to enter when user wants information about the show
     l3 = thirdChoice.split(' ')
 
     if l3[0] == 'how' or l3[0] == 'How':
-        if "seasons" and "many" and ("office" or "Office") in l3:
-            print("The Office has 9 seasons. If this does not answer your question, please frame your request in a different way")
+        if "seasons" and "many" in l3:
+            print("The Office has 9 seasons.")
+        elif 'episodes' and 'many' in l3:
+            print("The Office has 201 episodes across 9 seasons.")
+    
     elif l3[0] == 'when' or l3[0] == 'When':
-        if ('last' and 'released' or 'aired' or 'air' or 'release') or 'finish':
-            print("The Office released its last episode on 16 May 2013. If this does not answer your question, please frame your request in a different way")
-        if 'air' or 'released' or 'aired' or 'start' or 'first' in l3:
+        if 'air' in l3 or 'release' in l3 or 'released' in l3 or 'aired' in l3:
+            if 'last' in l3:
+                print("The Office released its last episode on 16 May 2013. If this does not answer your question, please frame your request in a different way")
+            elif 'pilot' in l3 or 'first' in l3:
+                print("The Office released its pilot on 24 March 2005. If this does not answer your question, please frame your request in a different way")
+        if 'begin' in l3 or 'start' in l3:
             print("The Office released its pilot on 24 March 2005. If this does not answer your question, please frame your request in a different way")
+        elif 'end' in l3 or 'finish' in l3:
+            print("The Office released its last episode on 16 May 2013. If this does not answer your question, please frame your request in a different way")
+    
+    elif l3[0] == 'who' or l3 == 'Who':
+        if 'main characters' in l3:
+            print("The main characters in The Office are: Michael Scott, Dwight Schrute, Pamela Beesly and Jim Halpert.")
+        elif 'secondary' in l3 or 'smaller' in l3:
+            print("The secondary charcters in The Office are: Angela Martin, Creed Batton, Kevin Malone, Oscar Martinez, Stanley Hudson, Ryan Howard, Kelly Kapoor, Toby Flenderson, Phyllis Vance, Meredith Palmer and Andy Bernard.")
+        elif 'is in' in l3 or 'cast' in l3:
+            print("The main cast members of The Office are: Steve Carell, John Krasinski, Jenna Fischer and Rainn Wilson.")
 
+    elif l3[0] == 'where' or l3[0] == 'Where':
+        if 'watch' in l3 or 'stream' in l3:
+            print("The Office is available for streaming on Amazon Prime, Netflix, Peacock and Disney+")
+
+    elif l3[0] == 'which' or l3[0] == 'Which':
+        if 'platform' in l3 or 'OTT' in l3 or 'app' in l3:
+            print("The Office is available for streaming on Amazon Prime, Netflix, Peacock and Disney+")
 
 
 
