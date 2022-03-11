@@ -26,13 +26,59 @@ def info(): #function to enter when user wants information about the show
             print("The Office released its last episode on 16 May 2013. If this does not answer your question, please frame your request in a different way")
     
     elif l3[0] == 'who' or l3 == 'Who':
-        if 'main characters' in l3:
+        if ('main' in l3 or 'lead' in l3) and ('characters' in l3 or 'character' in l3):
             print("The main characters in The Office are: Michael Scott, Dwight Schrute, Pamela Beesly and Jim Halpert.")
-        elif 'secondary' in l3 or 'smaller' in l3:
+        elif ('secondary' in l3 or 'smaller' in l3) and ('characters' in l3 or 'character' in l3):
             print("The secondary charcters in The Office are: Angela Martin, Creed Batton, Kevin Malone, Oscar Martinez, Stanley Hudson, Ryan Howard, Kelly Kapoor, Toby Flenderson, Phyllis Vance, Meredith Palmer and Andy Bernard.")
-        elif 'is in' in l3 or 'cast' in l3:
-            print("The main cast members of The Office are: Steve Carell, John Krasinski, Jenna Fischer and Rainn Wilson.")
+        elif ('main' in l3 or 'lead' in l3) and ('cast' in l3 or 'members' in l3 or 'actors' in l3):
+            print("The lead cast members of The Office are: Steve Carell(plays Michael Scott), John Krasinski(plays Jim halpert), Jenna Fischer(plays Pam Beesly) and Rainn Wilson(plays Dwight Schrute).")
+        elif ('secondary' in l3 or 'smaller' in l3) and ('cast' in l3 or 'members' in l3 or 'actors' in l3):
+            print("The secondary cast members in The Office are:")
+            print("Angela Kinsey(plays Angela Martin)")
+            print("Creed Batton(plays Creed Batton)")
+            print("Brian Baumgartner(plays Kevin Malone)")
+            print("Oscar Nunez(plays Oscar Martinez)")
+            print("Leslie David Baker(plays Stanley Hudson)")
+            print("BJ Novak(plays Ryan Howard)")
+            print("Mindy Kaling(plays Kelly Kapoor)")
+            print("Paul Lieberstein(plays Toby Flenderson)")
+            print("Phyllis Smith(plays Phyllis Vance)")
+            print("Kate Flannery(plays Meredith Palmer)")
+            print("Ed Helms(plays Andy Bernard)")
+        elif 'plays' in l3:
+            if 'Jim' in l3 or 'jim' in l3:
+                print("Jim Halpert is played by John Krasinski")
+            elif 'Dwight' in l3 or 'dwight' in l3:
+                print("Dwight Schrute is played by Rainn Wilson")
+            elif 'Michael' in l3 or 'michael' in l3:
+                print("Michael Scott is played by Steve Carell")
+            elif 'Pam' in l3 or 'pam' in l3:
+                print("Pam Beesly is played by Jenna Fischer")
+            elif 'Kevin' in l3 or 'kevin' in l3:
+                print("Kevin Malone is played by Brian Baumgartner")
+            elif 'Angela' in l3 or 'angela' in l3:
+                print("Angela Martin is played by Angela Kinsey")
+            elif 'Creed' in l3 or 'creed' in l3:
+                print("Creed Batton is played by Creed Batton")
+            elif 'Oscar' in l3 or 'oscar' in l3:
+                print("Oscar Martinez is played by Oscar Nunez")
+            elif 'Stanley' in l3 or 'stanley' in l3:
+                print("Stanley Hudson is played by Leslie David Baker")
+            elif 'Ryan' in l3 or 'ryan' in l3:
+                print("Ryan Howard is played by BJ Novak")
+            elif 'Kelly' in l3 or 'kelly' in l3:
+                print("Kelly Kapoor is played by Mindy Kaling")
+            elif 'Toby' in l3 or 'toby' in l3:
+                print("Toby Flenderson is played by Paul Lieberstein")
+            elif 'Phyllis' in l3 or 'phyllis' in l3:
+                print("Phyllis Vance is played by Phyllis Smith")
+            elif 'Meredith' in l3 or 'meredith' in l3:
+                print("Meredith Palmer is played by Kate Flannery")
+            elif 'Andy' in l3 or 'andy' in l3:
+                print("Andy Bernard is played by Ed Helms")
+          
 
+    
     elif l3[0] == 'where' or l3[0] == 'Where':
         if 'watch' in l3 or 'stream' in l3:
             print("The Office is available for streaming on Amazon Prime, Netflix, Peacock and Disney+")
