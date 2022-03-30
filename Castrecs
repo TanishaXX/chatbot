@@ -1,0 +1,204 @@
+import requests
+import json
+name = input("Enter the full name: ").title()
+if name == "Steve Carell":
+    response = requests.get("https://imdb-api.com/API/Name/k_uesz1sa9/nm0136797")
+    z = response.json()['knownFor']
+    Recs = []
+    for i in z:
+        l = i['fullTitle']
+        Recs.append(l)
+    for s in Recs:
+        print(s)
+elif name == "Rainn Wilson":
+    response = requests.get("https://imdb-api.com/API/Name/k_uesz1sa9/nm0933988")
+    z = response.json()['knownFor']
+    Recs = []
+    for i in z:
+        l = i['fullTitle']
+        Recs.append(l)
+    for s in Recs:
+        print(s)
+elif name == "Jenna Fishcer":
+    response = requests.get("https://imdb-api.com/API/Name/k_uesz1sa9/nm0278979")
+    z = response.json()['knownFor']
+    Recs = []
+    for i in z:
+        l = i['fullTitle']
+        Recs.append(l)
+    for s in Recs:
+        print(s)
+elif name == "John Krasinski":
+    response = requests.get("https://imdb-api.com/API/Name/k_uesz1sa9/nm1024677")
+    z = response.json()['knownFor']
+    Recs = []
+    for i in z:
+        l = i['fullTitle']
+        Recs.append(l)
+    for s in Recs:
+        print(s)
+elif name == "Creed Bratton":
+    response = requests.get("https://imdb-api.com/API/Name/k_uesz1sa9/nm0105588")
+    z = response.json()['knownFor']
+    Recs = []
+    for i in z:
+        l = i['fullTitle']
+        Recs.append(l)
+    for s in Recs:
+        print(s)
+elif name =="Leslie David Baker":
+    response = requests.get("https://imdb-api.com/API/Name/k_uesz1sa9/nm1534715")
+    z = response.json()['knownFor']
+    Recs = []
+    for i in z:
+        l = i['fullTitle']
+        Recs.append(l)
+    for s in Recs:
+        print(s)
+elif name == "Phyllis Smith":
+    response = requests.get("https://imdb-api.com/API/Name/k_uesz1sa9/nm0809613")
+    z = response.json()['knownFor']
+    Recs = []
+    for i in z:
+        l = i['fullTitle']
+        Recs.append(l)
+    for s in Recs:
+        print(s)
+elif name == "Brain Baumgartner ":
+    response = requests.get("https://imdb-api.com/API/Name/k_uesz1sa9/nm1580911")
+    z = response.json()['knownFor']
+    Recs = []
+    for i in z:
+        l = i['fullTitle']
+        Recs.append(l)
+    for s in Recs:
+        print(s)
+elif name == "Angela Kinsey":
+    response = requests.get("https://imdb-api.com/API/Name/k_uesz1sa9/nm1526554")
+    z = response.json()['knownFor']
+    Recs = []
+    for i in z:
+        l = i['fullTitle']
+        Recs.append(l)
+    for s in Recs:
+        print(s)
+elif name == "Kate Flannery":
+    response = requests.get("https://imdb-api.com/API/Name/k_uesz1sa9/nm0281212")
+    z = response.json()['knownFor']
+    Recs = []
+    for i in z:
+        l = i['fullTitle']
+        Recs.append(l)
+    for s in Recs:
+        print(s)
+elif name == "Oscar Nuñez":
+    response = requests.get("https://imdb-api.com/API/Name/k_uesz1sa9/nm1386645")
+    z = response.json()['knownFor']
+    Recs = []
+    for i in z:
+        l = i['fullTitle']
+        Recs.append(l)
+    for s in Recs:
+        print(s)
+elif name == "Mindy Kaling":
+    response = requests.get("https://imdb-api.com/API/Name/k_uesz1sa9/nm1411676")
+    z = response.json()['knownFor']
+    Recs = []
+    for i in z:
+        l = i['fullTitle']
+        Recs.append(l)
+    for s in Recs:
+        print(s)
+elif name == "B.J.Novak":
+    response = requests.get("https://imdb-api.com/API/Name/k_uesz1sa9/nm1145983")
+    z = response.json()['knownFor']
+    Recs = []
+    for i in z:
+        l = i['fullTitle']
+        Recs.append(l)
+    for s in Recs:
+        print(s)
+elif name == "Ed Helms":
+    response = requests.get("https://imdb-api.com/API/Name/k_uesz1sa9/nm1159180")
+    z = response.json()['knownFor']
+    Recs = []
+    for i in z:
+        l = i['fullTitle']
+        Recs.append(l)
+    for s in Recs:
+        print(s)
+elif name == "Paul Lieberstein":
+    response = requests.get("https://imdb-api.com/API/Name/k_uesz1sa9/nm0509425")
+    z = response.json()['knownFor']
+    Recs = []
+    for i in z:
+        l = i['fullTitle']
+        Recs.append(l)
+    for s in Recs:
+        print(s)
+elif name == "Craig Robinson":
+    response = requests.get("https://imdb-api.com/API/Name/k_uesz1sa9/nm0732497")
+    z = response.json()['knownFor']
+    Recs = []
+    for i in z:
+        l = i['fullTitle']
+        Recs.append(l)
+    for s in Recs:
+        print(s)
+elif name == "Ellie Kemper":
+    response = requests.get("https://imdb-api.com/API/Name/k_uesz1sa9/nm2608689")
+    z = response.json()['knownFor']
+    Recs = []
+    for i in z:
+        l = i['fullTitle']
+        Recs.append(l)
+    for s in Recs:
+        print(s)
+elif name == "Melora Hardin":
+    response = requests.get("https://imdb-api.com/API/Name/k_uesz1sa9/nm0002124")
+    z = response.json()['knownFor']
+    Recs = []
+    for i in z:
+        l = i['fullTitle']
+        Recs.append(l)
+    for s in Recs:
+        print(s)
+elif name == "Andy Buckley":
+    response = requests.get("https://imdb-api.com/API/Name/k_uesz1sa9/nm2952467")
+    z = response.json()['knownFor']
+    Recs = []
+    for i in z:
+        l = i['fullTitle']
+        Recs.append(l)
+    for s in Recs:
+        print(s)
+elif name == "Rashida Jones":
+    response = requests.get("https://imdb-api.com/API/Name/k_uesz1sa9/nm0429069")
+    z = response.json()['knownFor']
+    Recs = []
+    for i in z:
+        l = i['fullTitle']
+        Recs.append(l)
+    for s in Recs:
+        print(s)
+elif name == "David Denman":
+    response = requests.get("https://imdb-api.com/API/Name/k_uesz1sa9/nm0219292")
+    z = response.json()['knownFor']
+    Recs = []
+    for i in z:
+        l = i['fullTitle']
+        Recs.append(l)
+    for s in Recs:
+        print(s)
+elif name == "Amy Ryan":
+    response = requests.get("https://imdb-api.com/API/Name/k_uesz1sa9/nm0752407")
+    z = response.json()['knownFor']
+    Recs = []
+    for i in z:
+        l = i['fullTitle']
+        Recs.append(l)
+    for s in Recs:
+        print(s)
+else:
+    print("Sorry, we don't recognize that name")
+
